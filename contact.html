@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title> 
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+        <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper_inner">
+            <div class="vertical_wrap">
+                <div class="backdrop"></div>
+                <div class="vertical_bar">
+                    <div class="profile_info">
+                        <div class="img_holder">
+                            <img src="image/angelo_pic.png" alt="profile_pic">
+                        </div>
+                        <p class="title">Angelo B. Acero</p>
+                        <p class="sub_title">angelo.acero123@gmail.com</p>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="index.html">
+                            <span class="icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                            </span>
+                            <span class="text">PORTFOLIO</span>
+                        </a></li>
+                        <li><a href="contact.html" class="active">
+                                <span class="icon">
+                                        <i class="fas fa-address-book"></i>
+                                </span>
+                                <span class="text">CONTACT ME</span>
+                            </a></li>
+                            <li><a href="resume-info.html">
+                                    <span class="icon">
+                                            <i class="fas fa-file-alt"></i>
+                                    </span>
+                                    <span class="text">MY CV</span>
+                                </a></li>
+                          
+                    </ul>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/acero.angelo"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=angelo.acero123@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/angelo-acero-2216a5203/"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_container">
+                <div class="top_bar">
+                    <div class="cheesedog">
+                            <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        Contact Me<span></span>
+                    </div>
+                </div>
+               <div class="content_contact"> 
+                    <div class="contact_item">
+                        <ul>
+                            <li>Contact Number: <label for="cNumber"><i class="fas fa-mobile-alt"></i><span><a href="#">09652019726</a></span></label></li> 
+                            <br>
+                             <li>E-mail: <label for="cGmail"><i class="fas fa-envelope-square"></i><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=angelo.acero123@gmail.com">angelo.acero123@gmail.com</a></label></li>
+                            <li>Facebook: <label for="cFacebook"><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/acero.angelo">acero.angelo</a></label></li>
+                            <li>LinkendIn: <label for="cLinkendIn"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/angelo-acero-2216a5203/">angelo-acero</a></label></li>
+                        </ul>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var cheesedog = document.querySelector(".cheesedog");
+        var wrapper = document.querySelector(".wrapper");
+        var backdrop = document.querySelector(".backdrop");
+
+        cheesedog.addEventListener("click", function(){
+            wrapper.classList.add("active");
+        })
+
+        backdrop.addEventListener("click", function(){
+            wrapper.classList.remove("active");
+        })
+    </script>
+</body>
+</html>
